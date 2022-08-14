@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -90,12 +90,12 @@ hr {
 #closeModal,
 #closeModal2,
 #closeModal3 {
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 3.55rem;
+  width: 3.55rem;
   color: hsl(0deg, 0%, 85%);
   background-color: transparent;
   border: 0;
-  font-size: 1.56rem;
+  font-size: 3rem;
   font-weight: bold;
   position: absolute;
   right: 1.2rem;
@@ -133,6 +133,7 @@ footer .footer_description {
   padding: 1rem 0.5rem;
   font-weight: bold;
   text-align: center;
+  font-weight: 400;
 }
 footer .footer_description a {
   transition: 0.27s;
@@ -145,7 +146,7 @@ footer .footer_description a:hover {
 
 #rules, #reload {
   display: inline-block;
-  width: 8.125rem;
+  width: 13rem;
   height: 3.125rem;
   font-size: 1.25rem;
   outline: none;
@@ -155,6 +156,7 @@ footer .footer_description a:hover {
   text-shadow: 1px 1px 1px #000;
   font-weight: bold;
   color: white;
+  letter-spacing: 0.2rem;
   cursor: pointer;
   transition: 0.27s;
 }
@@ -167,12 +169,10 @@ footer .footer_description a:hover {
 
 #reload {
   background: hsl(240deg, 70%, 61%);
-  font-size: 0.938rem;
   display: none;
 }
 
 #rules {
   background: hsl(195deg, 53%, 39%);
-  font-size: 0.938rem;
   display: inline-block;
 }
