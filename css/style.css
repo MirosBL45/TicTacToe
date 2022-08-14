@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: "DynaPuff", cursive;
+  background: hsl(0deg, 0%, 70%);
+}
+
+h1 {
+  margin-top: 3rem;
+  font-size: 5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+hr {
+  width: 29rem;
+  height: 3px;
+  background: black;
+  margin-bottom: 2rem;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 27.6rem;
+  height: 28.125rem;
+  background: hsl(0deg, 0%, 50%);
+}
+
+.div_buttons {
+  margin: 1rem 0;
+}
+
+.rules_modal,
+.tieGame,
+.usedField {
+  text-shadow: none;
+  display: none;
+  background-color: hsl(0deg, 0%, 30%);
+  color: hsl(0deg, 0%, 85%);
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+  max-width: 40.62rem;
+  margin: auto;
+  padding: 3.12rem;
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.rules_modal h3,
+.tieGame h3,
+.usedField h3 {
+  margin: 3rem 0;
+  font-size: 2.7rem;
+}
+.rules_modal p,
+.tieGame p,
+.usedField p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+#closeModal,
+#closeModal2,
+#closeModal3 {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: hsl(0deg, 0%, 85%);
+  background-color: transparent;
+  border: 0;
+  font-size: 1.56rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  cursor: pointer;
+}
+
+.tile {
+  width: 9.188rem;
+  height: 9.188rem;
+  font-size: 9.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.horizontal_line {
+  border-bottom: 0.388rem solid rgb(73, 23, 202);
+}
+
+.vertical_line {
+  border-right: 0.388rem solid rgb(73, 23, 202);
+}
+
+.winner {
+  background: rgba(134, 134, 239, 0.679);
+  color: green;
+}
+
+footer {
+  margin: auto 0 5rem;
+}
+footer .footer_description {
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+footer .footer_description a {
+  transition: 0.27s;
+  text-decoration: none;
+  color: hsl(195deg, 53%, 51%);
+}
+footer .footer_description a:hover {
+  color: hsl(289deg, 72%, 27%);
+}
+
+#rules, #reload {
+  display: inline-block;
+  width: 8.125rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.313rem;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.27s;
+}
+#rules:hover, #reload:hover {
+  transform: scale(0.98);
+}
+#rules:active, #reload:active {
+  font-weight: bold;
+}
+
+#reload {
+  background: hsl(240deg, 70%, 61%);
+  font-size: 0.938rem;
+  display: none;
+}
+
+#rules {
+  background: hsl(195deg, 53%, 39%);
+  font-size: 0.938rem;
+  display: inline-block;
+}
