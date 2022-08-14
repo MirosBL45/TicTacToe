@@ -138,10 +138,10 @@ footer .footer_description {
 footer .footer_description a {
   transition: 0.27s;
   text-decoration: none;
-  color: hsl(195deg, 53%, 51%);
+  color: hsl(195deg, 53%, 29%);
 }
 footer .footer_description a:hover {
-  color: hsl(289deg, 72%, 27%);
+  color: hsl(240deg, 70%, 51%);
 }
 
 #rules, #reload {
