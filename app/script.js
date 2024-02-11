@@ -63,6 +63,7 @@ function setTile() {
 
     board[r][c] = currPlayer;
     this.innerText = currPlayer;
+    this.classList.add(currPlayer);
 
     if (currPlayer == playerO) {
         currPlayer = playerX;

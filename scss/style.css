@@ -27,7 +27,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "DynaPuff", cursive;
-  background: hsl(0, 0%, 70%);
+  background: hsl(0, 1%, 61%);
 }
 
 h1 {
@@ -117,6 +117,18 @@ hr {
   justify-content: center;
   align-items: center;
   cursor: grab;
+}
+
+.tile.X {
+  color: #7e32c6;
+}
+
+.tile.O {
+  color: #1717de;
+}
+
+.tile.winner {
+  background-color: #08ae3d;
 }
 
 .horizontal_line {
